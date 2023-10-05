@@ -1,0 +1,122 @@
+/*
+font-family: 'Roboto', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #3700b3;
+}
+
+#inicio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 180px;
+  margin-left: 10%;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  margin-left: 77px;
+}
+
+#esquerda {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12%;
+  border-left-color: #ffffff;
+}
+
+#direita {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  margin-right: 15%;
+}
+
+#ecarga {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+#divicon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+#abaixoecarga {
+  margin-top: 100px;
+}
+
+.txtbold {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  max-width: 363px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.campo {
+  display: flex;
+  flex-direction: row; /* Coluna para manter rótulo acima do campo */
+  margin-bottom: 10px;
+}
+
+label,
+input[type='text'],
+input[type='email'],
+input[type='submit'] {
+  display: flex; /* Faz com que os elementos sejam exibidos em blocos */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%; /* Ocupar porcentagem de largura disponível */
+  margin-bottom: 10px; /* Espaço entre os elementos */
+  color: #d9d9d9;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background-color: #d9d9d9;
+}
+
+input[type='submit'] {
+  background-color: #d9d9d9;
+  color: #3700b3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+.txtfoot {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: #d9d9d9;
+  font-size: 24px;
+}
+
+.txtfoot > p {
+  margin-bottom: 15px;
+}

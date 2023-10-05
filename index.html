@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link your styles -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+
+    <link rel="icon" type="image/x-icon" href="./images/ecarga-icon.PNG" />
+    <title>Entrar | E-carga</title>
+  </head>
+
+  <body>
+    <div id="inicio">
+      <div id="esquerda">
+        <div>
+          <div id="divicon">
+            <div>
+              <img
+                src="./images/ecarga-icon.PNG"
+                alt="E-carga logo"
+                width="84,75"
+                height="72"
+              />
+            </div>
+            <div>
+              <p id="ecarga">e-carga</p>
+            </div>
+          </div>
+        </div>
+        <div id="abaixoecarga">
+          <p class="txtbold">Praticidade na sua recarga de transporte</p>
+        </div>
+      </div>
+
+      <div id="direita">
+        <p class="txtbold" id="textologin">login</p>
+        <form id="login">
+          <div class="campo">
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="campo">
+            <label for="senha">senha:</label>
+            <input type="text" id="senha" name="senha" required />
+          </div>
+
+          <input
+            id="botao"
+            onclick="verificar()"
+            type="submit"
+            value="Enviar"
+          />
+        </form>
+        <div class="txtfoot">
+          <a
+            href="COLOCAR AQUI O CAMINHO DA PÁGINA DE CADASTRO"
+            class="textoclicavel"
+            >Cadastrar-se</a
+          >
+          <p>Recuperar senha</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function verificar() {
+        var email = document.getElementById('email').value
+        var senha = document.getElementById('senha').value
+        if (email == 'exemplo@unifap.com' && senha == 'Unifap123') {
+          alert('Foi')
+          window.location.href = './main.html'
+        }
+      }
+    </script>
+  </body>
+</html>
